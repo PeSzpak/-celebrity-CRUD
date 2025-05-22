@@ -35,8 +35,8 @@
                         <div class="form-group">
                             <input type="text" class="form-control" name="phone" id="phone"   placeholder="Phone">
                         </div>
-                        <div class="form-group">
-                            <textarea class="form-control" name="address" id="address" placeholder="Address"></textarea>
+                       <div class="form-group">
+                            <input type="text" class="form-control" name="address" id="address"   placeholder="Address">
                         </div>
                         <input type="submit" value="Salvar" class="btn btn-success btn-block">
                     </form>
