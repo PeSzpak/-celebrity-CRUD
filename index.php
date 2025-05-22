@@ -27,7 +27,7 @@
                 <div class="card card-body">
                     <form action="save.php" method="post">
                         <div class="form-group">
-                            <input type="text" class="form-control" name="nome" id="nome"   placeholder="Nome">
+                            <input type="text" class="form-control" name="name" id="name"   placeholder="Name">
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control" name="email" id="email"   placeholder="Email">
@@ -49,7 +49,7 @@
                     <thead>
                         <tr>
                             <th>Id</th>
-                            <th>Nome</th>
+                            <th>Name</th>
                             <th>Email</th>
                             <th>Phone</th>
                             <th>Address</th>
@@ -69,8 +69,7 @@
                                     <td><?= $row['email']; ?> </td>
                                     <td><?= $row['phone']; ?> </td>
                                     <td><?= $row['address']; ?> </td>
-                                    <td><?= $row['crated_at']; ?> </td>
-                                    <td><?= $row['actions']; ?> </td>
+                                    <td><?= $row['created_at']; ?> </td>
                                     <td>
                                         <a href="edit_form.php?id=<?= $row['id']; ?>" class="btn btn-secondary">
                                             <i class="fas fa-marker"></i>
