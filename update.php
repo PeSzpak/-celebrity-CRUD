@@ -17,4 +17,8 @@ if (!$result) {
     die("Query falhou.");
 }
 
+$_SESSION ['message'] = 'seccess client save!';
+$_SESSION ['message-type'] = 'success';
+
+
 header("Location: index.php");

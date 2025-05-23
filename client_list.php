@@ -1,4 +1,13 @@
-<?php include('db.php'); ?>
+<?php
+
+include('db.php');
+
+if (!isset($_SESSION['logado']) || $_SESSION['logado'] !== true) {
+    header("Location: login_form.php");
+    exit;
+}
+
+?>
 
 <!doctype html>
 <html lang="pt-br">
@@ -33,7 +42,9 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-            <?php session_unset();
+            <?php 
+                unset($_SESSION['message']);
+                unset($_SESSION['message-type']);
             } ?>
 
             <div class="row">
