@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 // port 3306
 $server = "localhost:3306";
 $user = "root";

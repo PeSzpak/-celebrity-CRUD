@@ -12,4 +12,7 @@ if (!$result) {
     die("Query falhou.");
 }
 
-header("Location: index.php");
+$_SESSION['message'] = 'Tarefa removida com sucesso.';
+$_SESSION['message-type'] = 'danger';
+
+header("Location: client_list.php");
